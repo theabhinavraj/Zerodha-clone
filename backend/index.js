@@ -181,7 +181,7 @@ teamPositions.forEach((item)=>{
 
 
 app.listen(PORT, () => {
-    console.log("App started!");
+    console.log("App Running!");
     mongoose.connect(url);
     console.log("DB Connected!")
 });
