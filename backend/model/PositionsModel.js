@@ -1,6 +1,6 @@
-const { model } = require("mongoose");
-const { PositionsSchema } = require("../schemas/PositionsSchema");
+const mongoose = require("mongoose");
+const { PositionsSchema } = require("../schemas/PositionsSchema");  // ✅ Fix this import
 
-const PositionsModel = model("positions", PositionsSchema);
+const PositionsModel = mongoose.model("Position", PositionsSchema);
 
 module.exports = { PositionsModel };
